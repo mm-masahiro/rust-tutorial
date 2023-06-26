@@ -19,4 +19,16 @@ fn main() {
 
     let (a, b, c, d) = tup;
     println!("a: {}, b: {}, c:{}, d:{}", a, b, c, d);
+
+    another_function();
+}
+
+fn another_function() {
+    println!("Called Another Function");
+
+    next_function();
+}
+
+fn next_function() {
+    println!("called next function")
 }

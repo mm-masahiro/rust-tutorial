@@ -30,5 +30,11 @@ fn another_function() {
 }
 
 fn next_function() {
-    println!("called next function")
+    println!("called next function");
+    let x = return_five();
+    println!("return five is {}", x);
+}
+
+fn return_five() -> i32 {
+    5
 }

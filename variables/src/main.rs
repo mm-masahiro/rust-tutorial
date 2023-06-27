@@ -33,6 +33,14 @@ fn next_function() {
     println!("called next function");
     let x = return_five();
     println!("return five is {}", x);
+
+    let number = 3;
+
+    if number < 5 {
+        println!("condition was true");
+    } else {
+        println!("condition was false");
+    }
 }
 
 fn return_five() -> i32 {

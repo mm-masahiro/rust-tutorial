@@ -34,13 +34,22 @@ fn next_function() {
     let x = return_five();
     println!("return five is {}", x);
 
-    let number = 3;
+    let number = 7;
 
     if number < 5 {
         println!("condition was true");
     } else {
         println!("condition was false");
     }
+
+    let condition_num = 2;
+    let num = if condition_num > 0 {
+        "This is more than 0"
+    } else {
+        "This is less than 0"
+    };
+
+    println!("{}", num);
 }
 
 fn return_five() -> i32 {

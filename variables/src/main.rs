@@ -69,6 +69,24 @@ fn next_function() {
         count += 1;
     }
     println!("End count = {}", count);
+
+    let mut count_down = 3;
+    while count_down > 0 {
+        println!("count_down is {}", count_down);
+        count_down -= 1;
+    }
+
+    println!("LIFTOFF!!!");
+
+    let a = [1, 2, 3, 4, 5];
+
+    for element in a {
+        println!("the value is {}", element)
+    }
+
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
 }
 
 fn return_five() -> i32 {

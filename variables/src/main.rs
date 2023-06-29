@@ -87,6 +87,25 @@ fn next_function() {
     for number in (1..4).rev() {
         println!("{}!", number);
     }
+
+    let n = 8;
+
+    let mut two_previous_num = 1;
+    let mut previous_num = 1;
+    let mut fibonacci = 1;
+
+    for _ in 1..n - 1 {
+        if n == 1 || n == 2 {
+            1;
+            break;
+        }
+
+        fibonacci = two_previous_num + previous_num;
+        two_previous_num = previous_num;
+        previous_num = fibonacci;
+    }
+
+    println!("fibonacci is {}", fibonacci);
 }
 
 fn return_five() -> i32 {

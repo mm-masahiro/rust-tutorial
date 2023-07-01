@@ -111,3 +111,7 @@ fn next_function() {
 fn return_five() -> i32 {
     5
 }
+
+fn ownership() {
+    let s = "hello";
+}

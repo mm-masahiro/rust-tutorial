@@ -106,6 +106,8 @@ fn next_function() {
     }
 
     println!("fibonacci is {}", fibonacci);
+
+    ownership();
 }
 
 fn return_five() -> i32 {
@@ -113,5 +115,16 @@ fn return_five() -> i32 {
 }
 
 fn ownership() {
-    let s = "hello";
+    let s = String::from("hello");
+    let s1 = String::from("Hello");
+    let s2 = s1.clone();
+    println!("{}, {}", s1, s2);
+
+    let after = takes_ownership(s);
+    println!("{}", after);
+}
+
+fn takes_ownership(some_string: String) -> String {
+    println!("{}", some_string);
+    some_string
 }
